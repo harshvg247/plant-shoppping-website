@@ -1,0 +1,458 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  .navbar-small-screen{
+    height: 50px;
+    background-color:#5DAA68 ;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+  }
+  .navbar-small-screen svg{
+    margin-right:20px ;
+    border: 2px solid black ;
+    background-color: azure;
+  }
+
+  .navbar-bg-screen {
+    height: 50px;
+    display: flex;
+    background-color: #5DAA68 ;
+    width: 100%;
+    position: fixed;
+    z-index:2;
+  }
+  .border {
+    border: 1px solid brown;
+  }
+  .nav-item {
+    border-right: 2px solid green;
+    width: 120px;
+    font-size: 20px;
+    max-width: 150px;
+    align-self: center;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+
+    opacity: 1;
+  }
+  .logo {
+    color: #3F6844;
+    height: 45px;
+    background-color: #FAF1CF;
+    width: 200px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+  }
+  .logo-img,
+  .logo-text {
+    margin: 5px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+   
+  }
+  .logo-text{
+    min-width: 200px;
+    color: #3F6844;
+  }
+  
+  .categories .svg{
+    left: 2px;
+    position: relative;
+    top: 2px;
+  }
+  .menu-button{
+    width: 30px;
+    transform: rotateX(180deg);
+    margin-right: 20px;
+    transition: all .2s linear;
+  }
+  
+  .menu{
+    width: 100%;
+    position:absolute;
+    display: block;
+    background-color: #5DAA68 ;
+    z-index: 2;
+    top: 50px;
+    transition: .2s all linear;
+    opacity: .9;
+    
+    overflow: hidden;
+  }
+  #menu{
+    height: 0%;
+  }
+  .rotate-180{
+    transform: rotateX(0deg);
+  }
+
+  .menu>ul{
+    z-index: 1;
+    font-size: 22px;
+    margin: 7px;
+    text-align: left;
+    color: #ffffff;
+    
+  }
+  .menu>ul>li{
+    padding: 4px;
+  }
+  .menu ul li:hover{
+    background-color:#3F6844;
+  }
+  .menu ul ul{
+    list-style: none;
+}
+  .menu ul ul li{
+    margin-left: 50px;
+    padding-left: 10px;
+    color: #FAF1CF;
+    
+  }
+  .menu ul ul li:hover{
+    background-color: #3F6844;
+  }
+  .menu>ul>li:nth-child(2):hover{
+    background-color: transparent;
+  }
+
+  .large-img {
+    
+    height: 95vh;
+    min-height: 400px;
+    background-image: url("Plant-images/wp8153507-green-plants-wallpapers.jpg");
+    background-size: cover;
+    
+  }
+  .large-img .text {
+    color: #FAF1CF;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    background-color: transparent;
+    top: 25%;
+    left: 40%;
+    padding: 15px;
+    font-size: 1.6em;
+    z-index: 1;
+  }
+  .large-img .text::before {
+    content: "";
+    background-color: #3F6844;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: .5;
+    z-index: -1;
+  }
+
+  .intro{
+    margin-top: 40px;
+    height: 50vh;
+    width: 100%;
+    max-height: 300px;
+    
+  }
+  
+  .intro div{
+    float:left;
+    height: 100%;
+  }
+  .intro .img{
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-1{
+    background-image: url("Plant-images/plant-nursery.jpg");
+  }
+  .img-2{
+    background-image: url("Plant-images/plant-nursery-2.jpg");
+  }
+  .intro .text{
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    background-color: #FAF1CF;
+    text-overflow: hidden;
+    color:#3F6844;
+  }
+  .intro .Content{
+    margin-top: 20px;
+    overflow: hidden;
+    height: 80%;
+    overflow: auto;
+    font-size: 1.3rem;
+    
+  }
+  @media only screen and (min-width: 0px) {
+    .col-xs {
+      width: 100%;
+      float: left;
+    }
+    .navbar-bg-screen{
+      display: none;
+    }
+    .intro .img{
+      display: none;
+    }
+    .intro .text{
+      width: 100%;
+    }
+    
+  }
+  @media only screen and (min-width: 500px) {
+    .col-sm {
+      width: 50%;
+      float: left;
+    }
+    .intro .img{
+      display: inline;
+    }
+    .intro .text{
+      width: 60%;
+    }
+    .intro .img-2{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .col-md {
+      width: 33.33%;
+      float: left;
+    }
+    .navbar-bg-screen{
+      display: flex;
+    }
+    .navbar-small-screen{
+      display: none;
+    }
+    .menu{
+      display: none;
+    }
+    
+  }
+  @media only screen and (min-width: 992px) {
+    .col-lg {
+      width: 25%;
+      float: left;
+    }
+    .intro .img{
+      width: 20%;
+      display: inline;
+      
+    }
+    
+  }
+  
+
+  .card-holder-heading{
+    margin-top: 40px;
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #5DAA68;
+    color: #FAF1CF;
+  
+  }
+
+  .card {
+    
+    height: 300px;
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+  }
+  .card img {
+    height: 150px;
+    width: 100%;
+   border-top-right-radius: 10px;
+   
+   
+   
+
+  }
+  .inner-container {
+    
+    width: 200px;
+    height: 280px;
+    margin-top: 5%;
+    position: relative;
+    background-color: #4bea63;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    overflow: hidden;
+  }
+  .inner-container:hover{
+    transform: translate(-3px,-3px);
+    box-shadow: 1px 1px 5px 2px black;
+  }
+  .plant-name,.plant-price{
+    display: block;
+    text-align: center;
+    margin: 8px;
+  }
+  .plant-name{
+    font-size: 20px;
+    color: #3F6844;
+    background-color: #FAF1CF;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  .plant-price{
+    font-size: 18px;
+    
+  }
+  .Add-to-cart{
+    position: absolute;
+    left: 58px;
+    bottom: 3%;
+    width: 80px;
+    height: 25px;
+    background-color: #FAF1CF;
+    border: 0;
+    border-radius: 3px;
+    color: #3F6844;
+
+  }
+  .Add-to-cart:hover{
+    border: 1.5px inset #3F6844;
+  }
+  .card-holder-heading{
+    margin-top: 40px;
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #5DAA68;
+    color: #FAF1CF;
+  
+  }
+  .drop-down{
+    display: none;
+    position: absolute;
+    background-color: #5DAA68;
+    top:28px;
+    left: 0px;
+    width: 200px;
+    opacity: .9;
+    }
+  .visible{
+    display: block;
+    height: auto;
+  }
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+.drop-down ul{
+    margin-top: 20px;
+list-style: none;
+color: #FAF1CF;
+margin-bottom: 20px;
+}
+.drop-down ul li{
+    margin: 4px;
+}
+
+.categories{
+color: black;
+position: relative;
+
+
+}
+.drop-down li:hover{
+background-color: #3F6844;
+}
+
+
+.after-navbar{
+  position: relative;
+  width: 100%;
+  height: 2px;
+  
+}
+
+.card-container{
+  margin-top: 40px;
+  overflow: hidden;
+  
+  
+}
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  
+  
+}
+.footer div{
+  background-color: #5DAA68;
+  color: #FAF1CF;
+  padding: 10px;
+
+}
+
+.footer h4{
+  font-size: 20px;
+  margin: 1px;
+  margin-top: 10px;
+  color: #2a3e2c;
+}
+.footer h5{
+  font-size: 18px;
+  display: inline;
+}
+.footer li{
+  list-style: none;
+}
+.footer .links li:nth-child(2):hover{
+  background-color: inherit;
+}
+.footer .links li:hover{
+  background-color: #3F6844;
+}
+.footer ul ul{
+  margin-left: 60px;
+}
+.links{
+  height: 168px;
+}
+
+
+
+/* .footer{
+  margin-top: 40px;
+  
+  background-color: #FAF1CF;
+  padding: 10px;
+}
+.footer-item{
+  font-size: 20px;
+  margin: 8px;
+  display: flex;
+}
+
+
+.links a{
+  margin-left: 10px;
+} */
+
+
