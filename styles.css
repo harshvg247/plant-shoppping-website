@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
   }
+  body{
+    font-family: 'Josefin Sans', sans-serif;
+  }
   
   .navbar-small-screen{
     height: 50px;
@@ -87,7 +90,7 @@
     top: 50px;
     transition: .2s all linear;
     opacity: .9;
-    
+    padding:2px;
     overflow: hidden;
   }
   #menu{
@@ -105,8 +108,10 @@
     color: #ffffff;
     
   }
-  .menu>ul>li{
-    padding: 4px;
+  .menu ul li{
+    padding-left: 6px;
+    border-radius: 10px;
+    
   }
   .menu ul li:hover{
     background-color:#3F6844;
@@ -129,24 +134,27 @@
 
   .large-img {
     
+    
     height: 95vh;
     min-height: 400px;
     background-image: url("Plant-images/wp8153507-green-plants-wallpapers.jpg");
     background-size: cover;
-    
   }
   .large-img .text {
     color: #FAF1CF;
     position: relative;
-    width: 30%;
+    width: 40%;
     text-align: center;
     background-color: transparent;
-    top: 25%;
-    left: 40%;
+    top: 35%;
+    left: 30%;
     padding: 15px;
     font-size: 1.6em;
     z-index: 1;
+    
   }
+  
+  
   .large-img .text::before {
     content: "";
     background-color: #3F6844;
@@ -399,7 +407,7 @@ background-color: #3F6844;
 .footer {
   margin-top: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   
   
 }
@@ -407,19 +415,20 @@ background-color: #3F6844;
   background-color: #5DAA68;
   color: #FAF1CF;
   padding: 10px;
-
+  font-size: 20px;
 }
 
 .footer h4{
-  font-size: 20px;
   margin: 1px;
   margin-top: 10px;
   color: #2a3e2c;
+  font-size: 22px;
 }
 .footer h5{
-  font-size: 18px;
+  font-size: 20px;
   display: inline;
 }
+
 .footer li{
   list-style: none;
 }
@@ -429,11 +438,9 @@ background-color: #3F6844;
 .footer .links li:hover{
   background-color: #3F6844;
 }
-.footer ul ul{
-  margin-left: 60px;
-}
+
 .links{
-  height: 168px;
+  height: 180px;
 }
 
 
